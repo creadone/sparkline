@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>SparkLine</title>
+    <script defer src='dist/index.js'></script>
+    <style>
+      body {
+        margin: 30px;
+      }
+      chart-sparkline {
+        margin-bottom: 10px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <chart-sparkline></chart-sparkline>
+      <chart-sparkline values="50,60,70,20,20,10,80"></chart-sparkline>
+    </div>
+    <div>
+      <chart-sparkline
+        values = "9,18,94,44,22,80,96"
+        line_color = "rgba(125, 171, 209, 0.5)"
+        fill_color = "rgba(193, 221, 235, 0.5)"
+      ></chart-sparkline>
+      <chart-sparkline
+        values = "685, 539, 182, 69, 313, 798, 749"
+        line_color = "rgba(0, 141, 240, 0.5)"
+        fill_color = "rgba(0, 203, 253, 0.5)"
+      ></chart-sparkline>
+    </div>
+    <div>
+      <chart-sparkline
+        values = "398, 131, 949, 718, 299, 889, 179, 938, 221, 327, 223"
+        line_color = "rgba(77, 126, 168, 0.5)"
+        fill_color = "none"
+      ></chart-sparkline>
+      <chart-sparkline
+        values = "781, 837, 326, 559, 165, 318, 965"
+        line_color = "none"
+        fill_color = "rgba(77, 126, 168, 0.5)"
+      ></chart-sparkline>
+    </div>
+  </body>
+</html>
